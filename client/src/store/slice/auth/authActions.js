@@ -6,7 +6,7 @@ export const userSignup = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://ai-powered-diet-planner.onrender.com/api/auth/signup",
         credentials
       );
 
@@ -22,7 +22,7 @@ export const userLogin = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ai-powered-diet-planner.onrender.com/api/auth/login",
         credentials
       );
 

@@ -27,12 +27,3 @@ An intelligent and personalized full-stack web application that generates daily 
 - **Auth**: JWT + BcryptJS
 
 ---
-
-## 📦 Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/ai-diet-planner.git
-cd ai-diet-planner
-```

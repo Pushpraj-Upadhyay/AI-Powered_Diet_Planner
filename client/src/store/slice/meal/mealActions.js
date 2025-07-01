@@ -12,7 +12,7 @@ export const createPlan = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/meal-plan/create",
+        "https://ai-powered-diet-planner.onrender.com/api/meal-plan/create",
         credentials,
         {
           headers: {
@@ -39,7 +39,7 @@ export const fetchPlan = createAsyncThunk(
     }
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/meal-plan/suggestions",
+        "https://ai-powered-diet-planner.onrender.com/api/meal-plan/suggestions",
         {},
         {
           headers: {
