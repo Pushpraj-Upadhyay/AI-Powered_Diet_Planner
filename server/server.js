@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://ai-powered-diet-planner.vercel.app/", // frontend origin
+    origin: "https://ai-powered-diet-planner.vercel.app", // frontend origin
     credentials: true,
   })
 );
