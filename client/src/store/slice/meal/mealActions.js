@@ -15,6 +15,7 @@ export const createPlan = createAsyncThunk(
         "https://ai-powered-diet-planner.onrender.com/api/meal-plan/create",
         credentials,
         {
+          withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
@@ -42,6 +43,7 @@ export const fetchPlan = createAsyncThunk(
         "https://ai-powered-diet-planner.onrender.com/api/meal-plan/suggestions",
         {},
         {
+          withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",

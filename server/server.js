@@ -13,6 +13,8 @@ app.use(
   cors({
     origin: "https://ai-powered-diet-planner.vercel.app", // frontend origin
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json());

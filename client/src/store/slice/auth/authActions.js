@@ -7,7 +7,8 @@ export const userSignup = createAsyncThunk(
     try {
       const response = await axios.post(
         "https://ai-powered-diet-planner.onrender.com/api/auth/signup",
-        credentials
+        credentials,
+        { withCredentials: true }
       );
 
       return response.data;
@@ -23,7 +24,8 @@ export const userLogin = createAsyncThunk(
     try {
       const response = await axios.post(
         "https://ai-powered-diet-planner.onrender.com/api/auth/login",
-        credentials
+        credentials,
+        { withCredentials: true }
       );
 
       return response.data;
